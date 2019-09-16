@@ -145,5 +145,14 @@ public class MyListTest {
         assertEquals(false, result);
     }
 
+    @Test
+    public void containsShouldReturnTrueWhenObjectInList() {
+        MyList myList = new MyList();
+        Object object = new Object();
+        myList.add(object);
+        boolean result = myList.contains(object);
+        assertEquals(true, result);
+    }
+
 
 }
