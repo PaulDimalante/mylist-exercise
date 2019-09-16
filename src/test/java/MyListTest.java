@@ -97,5 +97,32 @@ public class MyListTest {
         Object result = myList.remove(5);
     }
 
+    @Test
+    public void isEmptyShouldReturnTrueAfterAddAndRemove() {
+        MyList myList = new MyList();
+        Object object = new Object();
+        myList.add(object);
+        myList.remove(0);
+        boolean result = myList.isEmpty();
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void sizeReturns0WhenEmptyList() {
+        MyList myList = new MyList();
+        int result = myList.size();
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void sizeIncreasesBy1AfterAdd() {
+        MyList myList = new MyList();
+        Object object = new Object();
+        int initialResult = myList.size();
+        myList.add(object);
+        int afterAddResult = myList.size();
+        assertEquals(1, afterAddResult - initialResult);
+    }
+
 
 }

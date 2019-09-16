@@ -23,7 +23,7 @@ public class MyList {
     }
 
     public int size() {
-        return 0;
+        return this.list.size();
     }
 
     public boolean contains(Object object) {
