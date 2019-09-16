@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyListTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-09-16T19:08:35" hostname="DESKTOP-IFKHLR1" time="0.006">
+<testsuite name="MyListTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-09-16T21:00:55" hostname="DESKTOP-IFKHLR1" time="0.017">
   <properties/>
-  <testcase name="sizeIncreasesBy1AfterAdd" classname="MyListTest" time="0.003"/>
+  <testcase name="sizeIncreasesBy1AfterAdd" classname="MyListTest" time="0.014"/>
   <testcase name="containsShouldReturnFalseWhenObjectNotInList" classname="MyListTest" time="0.0"/>
   <testcase name="removeShouldThrowArrayIndexOutOfBoundsExceptionWhenIndexIsInvalid" classname="MyListTest" time="0.0"/>
   <testcase name="sizeDecreasesBy1AfterRemove" classname="MyListTest" time="0.0"/>
@@ -11,7 +11,7 @@
   <testcase name="isEmptyShouldReturnTrueWhenEverythingIsRemoved" classname="MyListTest" time="0.0"/>
   <testcase name="isEmptyShouldReturnTrueWhenEmptyList" classname="MyListTest" time="0.0"/>
   <testcase name="removeShouldReturnObjectRemoved" classname="MyListTest" time="0.0"/>
-  <testcase name="sizeReturns0WhenEmptyList" classname="MyListTest" time="0.0"/>
+  <testcase name="sizeReturns0WhenEmptyList" classname="MyListTest" time="0.001"/>
   <testcase name="containsShouldReturnTrueWhenObjectInList" classname="MyListTest" time="0.0"/>
   <testcase name="isEmptyShouldReturnTrueAfterAddAndRemove" classname="MyListTest" time="0.0"/>
   <testcase name="isEmptyShouldReturnFalseAfterAdd" classname="MyListTest" time="0.0"/>

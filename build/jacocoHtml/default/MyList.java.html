@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MyList.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">example-tdd-list</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">MyList.java</span></div><h1>MyList.java</h1><pre class="source lang-java linenums">import java.util.ArrayList;
+import java.util.List;
+
+<span class="fc" id="L4">public class MyList {</span>
+<span class="fc" id="L5">    private List&lt;Object&gt; list = new ArrayList&lt;Object&gt;();</span>
+
+    public boolean isEmpty() {
+<span class="fc bfc" id="L8" title="All 2 branches covered.">        return this.list.size() == 0;</span>
+    }
+
+    public boolean add(Object object) {
+<span class="fc" id="L12">        return this.list.add(object);</span>
+    }
+
+    public Object get(int index) throws ArrayIndexOutOfBoundsException {
+<span class="pc bpc" id="L16" title="1 of 4 branches missed.">        if(index &lt; 0 || index &gt;= this.list.size()) throw new ArrayIndexOutOfBoundsException(&quot;Index is invalid&quot;);</span>
+<span class="fc" id="L17">        return this.list.get(index);</span>
+    }
+
+    public Object remove(int index) throws ArrayIndexOutOfBoundsException {
+<span class="pc bpc" id="L21" title="1 of 4 branches missed.">        if(index&lt;0 || index&gt;=this.list.size()) throw new ArrayIndexOutOfBoundsException(&quot;Invalid index&quot;);</span>
+<span class="fc" id="L22">        return this.list.remove(index);</span>
+    }
+
+    public int size() {
+<span class="fc" id="L26">        return this.list.size();</span>
+    }
+
+    public boolean contains(Object object) {
+<span class="fc" id="L30">        return this.list.contains(object);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

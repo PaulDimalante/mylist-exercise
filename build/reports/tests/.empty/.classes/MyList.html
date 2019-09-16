@@ -1,0 +1,116 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: MyList</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: MyList (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MyList</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/ 7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/ 10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import java.util.ArrayList;
+<i>2</i>&nbsp;import java.util.List;
+<i>3</i>&nbsp;
+<b class="fc"><i>4</i>&nbsp;public class MyList {</b>
+<b class="fc"><i>5</i>&nbsp;    private List&lt;Object&gt; list = new ArrayList&lt;Object&gt;();</b>
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;    public boolean isEmpty() {
+<b class="fc"><i>8</i>&nbsp;        return this.list.size() == 0;</b>
+<i>9</i>&nbsp;    }
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;    public boolean add(Object object) {
+<b class="fc"><i>12</i>&nbsp;        return this.list.add(object);</b>
+<i>13</i>&nbsp;    }
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;    public Object get(int index) throws ArrayIndexOutOfBoundsException {
+<b class="fc"><i>16</i>&nbsp;        if(index &lt; 0 || index &gt;= this.list.size()) throw new ArrayIndexOutOfBoundsException(&quot;Index is invalid&quot;);</b>
+<b class="fc"><i>17</i>&nbsp;        return this.list.get(index);</b>
+<i>18</i>&nbsp;    }
+<i>19</i>&nbsp;
+<i>20</i>&nbsp;    public Object remove(int index) throws ArrayIndexOutOfBoundsException {
+<b class="fc"><i>21</i>&nbsp;        if(index&lt;0 || index&gt;=this.list.size()) throw new ArrayIndexOutOfBoundsException(&quot;Invalid index&quot;);</b>
+<b class="fc"><i>22</i>&nbsp;        return this.list.remove(index);</b>
+<i>23</i>&nbsp;    }
+<i>24</i>&nbsp;
+<i>25</i>&nbsp;    public int size() {
+<b class="fc"><i>26</i>&nbsp;        return this.list.size();</b>
+<i>27</i>&nbsp;    }
+<i>28</i>&nbsp;
+<i>29</i>&nbsp;    public boolean contains(Object object) {
+<b class="fc"><i>30</i>&nbsp;        return this.list.contains(object);</b>
+<i>31</i>&nbsp;    }
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-09-16 17:02</div>
+</div>
+</body>
+</html>
