@@ -27,7 +27,7 @@ public class MyList {
     }
 
     public boolean contains(Object object) {
-        return true;
+        return false;
     }
 
 }

@@ -124,5 +124,26 @@ public class MyListTest {
         assertEquals(1, afterAddResult - initialResult);
     }
 
+    @Test
+    public void sizeDecreasesBy1AfterRemove() {
+        MyList myList = new MyList();
+        Object object = new Object();
+        myList.add(object);
+        int initialResult = myList.size();
+        myList.remove(0);
+        int afterRemoveResult = myList.size();
+        assertEquals(-1, afterRemoveResult - initialResult);
+    }
+
+    @Test
+    public void containsShouldReturnFalseWhenObjectNotInList() {
+        MyList myList = new MyList();
+        Object object1 = new Object();
+        Object object2 = new Object();
+        myList.add(object1);
+        boolean result = myList.contains(object2);
+        assertEquals(false, result);
+    }
+
 
 }
