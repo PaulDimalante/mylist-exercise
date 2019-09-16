@@ -17,7 +17,8 @@ public class MyList {
         return this.list.get(index);
     }
 
-    public Object remove(int index) {
+    public Object remove(int index) throws ArrayIndexOutOfBoundsException {
+        if(index<0 || index>=this.list.size()) throw new ArrayIndexOutOfBoundsException("Invalid index");
         return this.list.remove(index);
     }
 

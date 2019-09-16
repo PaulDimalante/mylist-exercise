@@ -47,4 +47,55 @@ public class MyListTest {
         assertEquals(object, result);
     }
 
+    @Test
+    public void getShouldReturn3ObjectAfter5Adds() {
+        MyList myList = new MyList();
+        Object object0 = new Object();
+        Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = new Object();
+        Object object4 = new Object();
+        myList.add(object0);
+        myList.add(object1);
+        myList.add(object2);
+        myList.add(object3);
+        myList.add(object4);
+        Object result = myList.get(2);
+        assertEquals(object2, result);
+    }
+
+    @Test
+    public void removeShouldReturnObjectRemoved() {
+        MyList myList = new MyList();
+        Object object0 = new Object();
+        Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = new Object();
+        Object object4 = new Object();
+        myList.add(object0);
+        myList.add(object1);
+        myList.add(object2);
+        myList.add(object3);
+        myList.add(object4);
+        Object result = myList.remove(2);
+        assertEquals(object2, result);
+    }
+
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    public void removeShouldThrowArrayIndexOutOfBoundsExceptionWhenIndexIsInvalid() {
+        MyList myList = new MyList();
+        Object object0 = new Object();
+        Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = new Object();
+        Object object4 = new Object();
+        myList.add(object0);
+        myList.add(object1);
+        myList.add(object2);
+        myList.add(object3);
+        myList.add(object4);
+        Object result = myList.remove(5);
+    }
+
+
 }
